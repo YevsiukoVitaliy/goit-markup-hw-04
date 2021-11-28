@@ -19,6 +19,14 @@ body {
 .nav-link:focus,.contaks-link:focus {
 	color: var(--title-color);
 }
+.group-link:hover .icon-group,
+.group-link:hover .icon-group{
+	fill: #2196F3;
+}
+.group-link:focus,
+.group-link:hover{
+	border: 1px solid #2196F3;
+}
 .container-network:hover,
 .container-network:focus{
 background-color: #2196F3;
@@ -34,13 +42,15 @@ background-color: #2196F3;
 }
 .item-gallery:hover,
 .item-gallery:focus{
-	box-sizing: border-box;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*----------------------Иконки----------------------*/
 .icon-smartphone,.icon-envelope{
 	margin-right: 10px;
 	fill:currentColor;
+}
+.icon-group{
+	fill: #AFB1B8;
 }
 .container-advantage{
 	width: 270px;
@@ -73,24 +83,19 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 	display: flex;
 	justify-content: center;
 }
-.network-item+.network-item{
-	margin-left: 10px;
-}
 .icon-network{
 	fill: #AFB1B8;
 }
 .group-list{
 	display: flex;
 }
-.group-item{
+.group-link{
 	width: 170px;
 	height: 92px;
-	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #AFB1B8;
-	box-sizing: border-box;
 	border-radius: 4px;
 }
 .group-item+.group-item{
@@ -182,6 +187,7 @@ margin-right: 50px;
 .footer-web,.header-web{
 	color: var(--title-color);
 	font-family: Raleway, sans-serif;
+	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -248,7 +254,7 @@ margin-right: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-	url('../imeges/img-container.jpg');
+	url('../images/img-container.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -410,6 +416,10 @@ margin-right: 50px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
+.mt-footer:focus,.maps-footer:hover,
+.mt-footer:hover,.maps-footer:focus{
+	color: var(--title-color)
+}
 .footer-item:not(:last-child){
 	margin-bottom: 9px;
 }
@@ -432,13 +442,13 @@ color: #FFFFFF;
 }
 .container-footer{
 	display: flex;
-	
+	align-items: baseline;
 }
 .text-network{
 	margin-bottom: 20px;
 }
 .container-list-network{
 	margin-left: 70px;
-	margin-top: 12px;
+	
 }
 
