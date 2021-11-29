@@ -20,12 +20,12 @@ body {
 	color: var(--title-color);
 }
 .group-link:hover .icon-group,
-.group-link:hover .icon-group{
+.group-link:focus .icon-group{
 	fill: #2196F3;
 }
 .group-link:focus,
 .group-link:hover{
-	border: 1px solid #2196F3;
+	border-color:#2196F3;
 }
 .container-network:hover,
 .container-network:focus{
@@ -40,9 +40,9 @@ background-color: #2196F3;
 .network-link:focus{
 	background-color: #2196F3;
 }
-.item-gallery:hover,
-.item-gallery:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.item-gallery:focus,
+.item-gallery:hover{
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*----------------------Иконки----------------------*/
 .icon-smartphone,.icon-envelope{
@@ -53,6 +53,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 	fill: #AFB1B8;
 }
 .container-advantage{
+	justify-content: center;
 	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
@@ -60,10 +61,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 	border-radius: 4px;
 	display: flex;
 	align-items: center;
-}
-.icon-advantage{
-	margin-left: auto;
-	margin-right: auto;
 }
 .container-network-blok{
 	display: flex;
@@ -114,7 +111,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .network-link-footer:hover{
 	background-color: #2196F3;
 }
-
+.network-item+.network-item{
+	margin-left: 10px;
+}
 .network-item-footer+.network-item-footer{
 	margin-left: 10px;
 }
@@ -378,6 +377,7 @@ margin-right: 50px;
 	font-size: 16px;
 	line-height: 1.9;
 	letter-spacing: 0.03em;
+	color: var(--main-text-color)
 }
 .item-gallery {
 	background: var(--footer-text-color);
@@ -385,8 +385,6 @@ margin-right: 50px;
 }
 .container-gallery{
 	padding: 20px 24px;
-}
-.container-gallery{
 	border: 1px solid #EEEEEE;
 	border-top: 0;
 }
@@ -411,7 +409,6 @@ margin-right: 50px;
 .mt-footer,.maps-footer{
 	font-family: Roboto,sans-serif;
 	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -428,13 +425,12 @@ margin-right: 50px;
 	padding: 60px 0;
 }
 .text-network{
-font-style: normal;
-font-weight: bold;
-line-height: 1.14px;
+font-weight: 700;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
-
+margin-bottom: 20px;
 }
 .list-network{
 	display: flex;
@@ -443,9 +439,6 @@ color: #FFFFFF;
 .container-footer{
 	display: flex;
 	align-items: baseline;
-}
-.text-network{
-	margin-bottom: 20px;
 }
 .container-list-network{
 	margin-left: 70px;
